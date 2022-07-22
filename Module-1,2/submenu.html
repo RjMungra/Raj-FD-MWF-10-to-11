@@ -1,0 +1,105 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title>submenu</title>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<style type="text/css">
+  		*{
+  			margin: 0px;
+  			padding: 0px;
+  		}
+  		.menu{
+  			height: 50px;
+  			width: 100%;
+  			background-color: red;
+  		}
+  		.menu a{
+  			float: left;
+  			text-decoration: none;
+  			padding: 15px 15px;
+  			color: white;
+  			font-size: 20px;
+  		}
+  		.submenu{
+  			float: left;
+  		}
+  		.submenubtn{
+  			border:none;
+  			outline: none;
+  			background-color: inherit;
+  			font-family: inherit;
+  			padding: 15px 15px;
+  			color: white;
+  			font-size: 20px;
+  		}
+  		.submenu-content{
+  			display: none;
+  			position: absolute;
+  			left: 0;
+  			background-color: black;
+  			height: 50px;
+  			width: 100%;
+  		}
+  		.submenu-content a{
+  			text-decoration: none;
+  			float: left;
+  		}
+  		.submenu:hover .submenu-content{
+  			display: block;
+  		}
+  		.subm{
+  			float: right;
+  		}
+  		.submbtn{
+  			border:none;
+  			outline: none;
+  			background-color: inherit;
+  			color: white;
+  			font-family: inherit;
+  			font-size: 20px;
+  			padding: 15px 15px;
+  		}
+  		.subm-content{
+  			display: none;
+  			position: absolute;
+  			left: 0;
+  			background-color: pink;
+  			height: 50px;
+  			width: 100%;
+  		}
+  		.subm-content a{
+  			text-decoration: none;
+  			float:left;
+  		}
+  		.subm:hover .subm-content{
+  			display: block;
+  		}
+  		
+  	</style>
+  </head>
+  <body>
+  <div class="menu">
+  	<a href="">Home</a>
+  	<a href="">About</a>
+  	<div class="subm">
+  		<button class="submbtn">Product<i class="fa fa-caret-down"></i></button>
+  		<div class="subm-content">
+  			<a href="">packing</a>
+  			<a href="">buying</a>
+  			<a href="">packing</a>
+  			<a href="">selling</a>
+  		</div>
+  	</div>
+
+  	<a href="">Contect us</a>
+  	<div class="submenu">
+  		<button class="submenubtn">Service<i class="fa fa-caret-down"></i></button>
+  		<div class="submenu-content">
+  			<a href="">loading</a>
+  			<a href="">bring</a>
+  			<a href="">packing</a>
+  		</div>
+  	</div>
+  </div>
+  </body>
+  </html>

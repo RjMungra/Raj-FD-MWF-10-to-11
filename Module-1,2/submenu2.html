@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submenu</title>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.menu{
+		height: 50px;
+		width: 100%;
+		background-color: grey;
+	}
+	.menu a{
+		float: left;
+		text-decoration: none;
+		color: white;
+		padding: 15px 15px;
+		font-size: 20px;
+	}
+	.submenu{
+		float: left;
+	}
+	.submenubtn{
+		border:none;
+		outline: none;
+		background-color: inherit;
+		font-family: inherit;
+		color: white;
+		padding: 15px 15px;
+		font-size: 20px;
+	}
+	.submenu-content{
+		display: none;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		height: 50px;
+		background-color: green;
+		color: white;
+	}
+	.submenu:hover .submenu-content{
+		display: block;
+	}
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="menu">
+	<a href="">Home</a>
+	<a href="">About</a>
+	<div class="submenu">
+		<button class="submenubtn">Product</button>
+		<div class="submenu-content">
+			<a href="">Loding</a>
+			<a href="">Packing</a>
+			<a href="">selling</a>
+		</div>
+	</div>
+	<a href="">Contect us</a>
+</div>
+</body>
+</html>

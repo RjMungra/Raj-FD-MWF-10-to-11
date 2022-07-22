@@ -1,0 +1,26 @@
+
+		
+		img{
+			width: 100px;
+		}
+		header{
+			background: black;
+			display: flex;
+		}
+
+		header::before{
+			display: flex;
+			background-color: red;
+			opacity: 0.3;
+		}
+
+		ul{
+			list-style: none;
+			display: flex;
+		}
+		li a{
+			padding: 10px;
+			color: white;                     
+			text-decoration: none;
+		}
+

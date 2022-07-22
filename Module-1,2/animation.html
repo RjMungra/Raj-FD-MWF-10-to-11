@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+		
+		.square{
+			height: 300px;
+			width:	300px;
+			border:5px solid green;
+			/*position: relative;*/
+			/*background-color: red;*/
+			animation-name: abc;
+		    animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+			margin-top: 150px;
+			margin-left: 200px;
+		}
+
+		@keyframes abc{
+			0%{transform: rotate(0deg);}
+			25%{background-color: yellow;}
+			50%{background-color: grey;}
+			75%{background-color: orange;}
+			100%{transform: rotate(360deg);}
+		}
+		.circle {
+			height: 200px;
+			width: 200px;
+			border: 5px solid black;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			margin: 0 auto;
+			border-radius: 50%;
+			position: relative;
+			background-color: black;
+			animation-name: circle;
+			animation-duration: 5s;
+			animation-direction: normal;
+			animation-iteration-count: infinite;
+			margin-top: 150px;
+			margin-left: 200px;
+		}
+		@keyframes circle{
+			0%{background-color: black; transform: scale(1);}
+			25%{background-color: red; transform: scale(1.2);}
+			50%{background-color: blue; transform: scale(1.5);}
+			75%{background-color: green; transform: scale(1.2);}
+			100%{background-color: orange; transform: scale(1);}
+		}
+	</style>
+</head>
+<body>
+	
+<div>
+	<div class="square">
+		<div class="circle"></div>
+		
+		</div>
+
+</div>
+
+</body>
+</html>

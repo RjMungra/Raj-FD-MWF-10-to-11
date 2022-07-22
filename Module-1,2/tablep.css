@@ -1,0 +1,39 @@
+body
+{
+
+	background: yellow;
+}
+table
+{
+
+background: greenyellow;
+	border: black dotted;
+	text-align: center;
+
+}
+center{
+	margin-left: auto;
+	margin-right: auto;
+}
+h1{
+	background: pink;
+	width: 230px;
+	text-align: center;
+	font-size: 30px;
+}
+header{
+	background: red;
+	border: 1px solid black;
+	width: 300px;
+	font-size: 30px;
+}
+footer{
+	background: pink;
+	border: 1px dotted blue;
+	width: 300px;
+}
+article{
+	background: cyan;
+	border: 1px bold darkblue;
+	width: 300px;
+}

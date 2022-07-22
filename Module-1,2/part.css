@@ -1,0 +1,47 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	font-size: 30px;
+	text-align: center;
+}
+.nav{
+	background-color: black;
+	
+}
+.nav a{
+	text-decoration: none;
+	font-size: 30px;
+	padding: 20px;
+	color: white;
+}
+section{
+	height: 100%;
+	display: flex;
+	padding-top: 10px;
+}
+.colum-a{
+	border: 1px solid black;
+	width: 20%;
+	background-image: url(part1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	text-align: justify;
+	padding: 5px;
+}
+.colum-b{
+	border: 1px solid black;
+	width: 60%;
+	background-color: orange;
+	background-image: url(part2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	text-align: justify;
+	padding: 5px;
+}
+h1{
+	text-align: center;
+}

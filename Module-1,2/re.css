@@ -1,0 +1,141 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*body{
+	background-image: url(rebg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}*/
+header{
+	display: flex;
+	position: relative;
+	height: 100px;
+	
+
+}
+header:before{
+	content: "";
+	position: absolute;
+	background-image: url(reheader.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+
+}
+div{
+	height: 100px;
+	margin-left: 20px;
+}
+img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+}
+ul{
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	padding: 20px;
+	font-size: 25px;
+}
+a:hover{
+	background-color: red;
+	color: white;
+	border-radius: 15px;
+}
+section{
+	position: relative;
+	height: 600px;
+	width: 100%;
+	justify-content: center;
+
+}
+section:before{
+	content: "";
+	position: absolute;
+	background-image: url(rebg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100% ;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.6;
+
+}
+h1{ 
+	text-align: center;
+	font-size: 40px;
+	padding-top: 50px;
+	color:   #ff0000;
+}
+.a{
+	text-align: center;
+	margin-right: 200px;
+	margin-left: 200px;
+	padding: 50px;
+}
+button{
+	padding-top: 50px;
+	margin-left: 600px;
+	padding: 6px 50px;
+	font-size: 25px;
+	cursor: pointer;
+	background: #ff6600;
+	border-radius: 15px;
+
+}
+button:hover{
+	    background-color: crimson;
+    transition: all 1s;
+    box-shadow: inset 0 0 20px 20px  #ff0000;
+}
+aside{
+	background: gray;
+}
+.colum-a{
+	border: 1px solid black;
+	width: 20%;
+	height: 100%;
+	background-image: url(re1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	text-align: justify;
+	padding: 5px;
+
+}
+.colum-b{
+	border: 1px solid black;
+	width: 60%;
+	height: 330px;
+	background-color: orange;
+	background-image: url(re2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	text-align: justify;
+	padding: 5px;
+}
+
+aside{
+	display: flex;
+	padding: 20px;
+}
+.colum-a:hover{
+    transition: all 1s;
+    box-shadow: 0 0 20px 20px #ff8533;
+}
+.colum-b:hover{
+    transition: all 1s;
+    box-shadow: 0 0 20px 20px #ff8533;
+}

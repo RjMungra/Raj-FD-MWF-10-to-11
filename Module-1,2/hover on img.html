@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transition</title>
+	<style type="text/css">
+		#products{
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 75px;
+			grid-row-gap: 40px;
+			margin-top: 20px;
+			column-gap: 100px;
+		}
+		.pro{
+			height: 200px;
+			width: 200px;
+			position: relative;
+			
+		}
+		.pro img{
+			height: 200px;
+			width: 200px;
+		}
+		.pro input{
+			position: absolute;
+			opacity:0;
+			height: 40px;
+			width: 200px;
+			bottom: -40px;
+			left: 0;
+			justify-content: space-between;
+			border: none;
+			background-color: black;
+			color: white;
+			font-size: 25px;
+			transition: 1s;
+		}
+
+		.pro:hover input{
+			opacity: 1;
+			bottom: 0;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+	<section id="products">
+		<div class="pro">
+			<img src="products/f1.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+
+		<div class="pro">
+			<img src="products/f2.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+
+		<div class="pro">
+			<img src="products/f3.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+
+		<div class="pro">
+			<img src="products/f4.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+
+		<div class="pro">
+			<img src="products/f5.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+
+		<div class="pro">
+			<img src="products/f6.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+
+		<div class="pro">
+			<img src="products/f7.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+		<div class="pro">
+			<img src="products/f8.jpg">
+			<input type="button" name="" value="Add To Cart">
+		</div>
+	</section>
+
+</body>
+</html>

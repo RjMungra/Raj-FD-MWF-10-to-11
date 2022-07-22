@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submenu</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.menu{
+			background-color: skyblue;
+			height: 50px;
+			width: 100%;
+		}
+		.menu a{
+			float: left;
+			text-decoration: none;
+			padding: 15px 15px;
+			color: black;
+			font-size: 20px;
+
+		}
+		.submenu{
+			float: left;
+
+		}
+		.submenubtn{
+			border:none;
+			background-color: inherit;
+			font-family: inherit;
+			padding: 15px 15px;
+			font-size: 20px;
+		}
+		.submenu-content{
+			display: none;
+			position: absolute;
+			/*left: 0;*/
+			/*background-color: green;*/
+			height: 50px;
+			width: 50px;
+		}
+		.submenu:hover .submenu-content{
+			display: block;
+		}
+		/*.menu{
+			height: 50px;
+			width: 100%;
+			background-color: grey;
+		}
+		.menu a{
+			float: left;
+			text-decoration: none;
+			padding: 10px 10px;
+			color: white;
+			font-size: 20px;
+		}
+		.submenu{
+			float: left;
+		}
+		.submenubtn{
+			border:none;
+			outline: none;
+			background-color: inherit;
+			color: white;
+			padding: 10px 10px;
+			font-size: 20px;
+		}
+		.submenu-content{
+			display: none;
+			position: absolute;
+			left: 0;
+			background-color: orange;
+			height: 50px;
+			width: 100%
+
+		}
+		.submenu:hover .submenu-content{
+			display: block;
+		}*/
+	</style>
+</head>
+<body>
+<div class="menu">
+	<a href="">Home</a>
+	<a href="">About</a>
+	<div class="submenu">
+		<button class="submenubtn">Product<i class="fa fa-caret-down"></i></button>
+		<div class="submenu-content">
+			<a href="">Loding</a>
+			<a href="">Packing</a>
+			<a href="">shiping</a>
+		</div>
+	</div>
+	<a href="">Contect us</a>
+</div>
+</body>
+</html>
