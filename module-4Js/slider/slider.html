@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slider</title>
+</head>
+<body>
+
+<img class="i1" src="1.png" height="500px" width="500px">
+<img class="i1" src="2.png" height="500px" width="500px">
+<img class="i1" src="3.png" height="500px" width="500px">
+<img class="i1" src="4.png" height="500px" width="500px">
+<img class="i1" src="5.png" height="500px" width="500px">
+<img class="i1" src="6.png" height="500px" width="500px">
+
+</body>
+
+<script>
+	
+	counter=0;
+
+	function slider() {
+		
+		rj = document.getElementsByClassName('i1')
+
+		for (var i=0; i<rj.length; i++)
+		 {
+		 	rj[i].style.display="none";
+		 }
+
+		 if( counter == rj.length)
+		 {
+		 	counter=0;
+		 }
+
+		 rj[counter].style.display="block";
+		 counter++
+		 setTimeout(slider,1000);
+	}
+
+	slider();
+
+</script>
+
+
+ <!-- <script>
+    counter=0;
+
+    function slider(){
+        vr = document.getElementsByClassName('i1')
+        for( var i=0; i<vr.length; i++)
+        {
+            // vr[i]=.style.display="none";
+            vr[i].style.display="none";
+        }
+
+        if(counter == vr.length )
+        {
+            counter=0;
+        }
+    
+        vr[counter].style.display="block";
+        counter++
+        setTimeout(slider,2000);
+    }
+    slider();
+</script> -->
+</html>

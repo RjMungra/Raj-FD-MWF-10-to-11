@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>open/close</title>
+</head>
+<body>
+ 
+
+ <button onclick="openwindow()">open</button>
+ <button onclick="closewindow()">close</button>
+</body>
+
+
+<script>
+	
+	var rj;
+
+	function openwindow() {
+		rj = window.open("file:///D:/module-4Js/slider/slider.html" , "_blank" , "height=500px; width=500px;")
+	}
+
+	function closewindow() {
+		rj.close();
+	}
+</script>
+</html>
