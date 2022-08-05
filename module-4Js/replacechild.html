@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replece</title>
+</head>
+<body>
+    
+    <ul id="change">
+        <li>home</li>
+        <li>about</li>
+        <li>product</li>
+        <li>contect us</li>
+    </ul>
+
+    <button onmouseover="get()">click</button>
+</body>
+
+<script>
+
+
+function get(){
+    var newelement = document.createElement("li")
+     var newelment = document.createTextNode('blog')
+
+     newelement.appendChild (newelment)
+
+     var chnge=document.getElementById('change')
+    
+    var oldelement=chnge.children[1]
+    chnge.replaceChild(newelement,oldelement)
+}
+</script>
+</html>
