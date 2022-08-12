@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfocus</title>
+</head>
+<body>
+    <form>
+    username : <input type="text" onfocus="f(this)"><br>
+
+        password : <input type="password" onfocus="f(this)"><br>
+
+    country : 
+     <select onfocus="f(this)">
+        <option value="">india</option>
+        <option value="">australiya</option>
+        <option value="">england</option>
+     </select><br>
+
+
+
+    <button>submit</button>
+    </form>
+</body>
+
+
+<script>
+
+    function f(element){
+
+        element.style.background="red";
+    }
+</script>
+</html>

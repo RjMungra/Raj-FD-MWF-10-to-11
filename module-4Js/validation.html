@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+
+    <form>
+        username : <input type="text" oninput="i(this)"><br>
+    
+            password : <input type="password" oninput="i(this)"><br>
+    
+        country : 
+         <select oninput="i(this)">
+            <option value="">india</option>
+            <option value="">australiya</option>
+            <option value="">england</option>
+         </select><br>
+    
+    
+    
+        <button>submit</button>
+        </form>
+    <div id="abc"></div>
+</body>
+
+<script>
+
+    function i(element){
+        var a=element.value;
+        // prompt(a);
+        document.getElementById('abc').innerHTML=a
+
+    }
+</script>
+</html>
