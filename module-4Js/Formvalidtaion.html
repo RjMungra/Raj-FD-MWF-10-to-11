@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+        <form action="" method="get" id="form">
+            <label>Name:</label>
+            <input type="text" id="name"><br><br>
+            <label>Password:</label>
+            <input type="password"  id="password"><br><br>
+            <button>submit</button>
+        </form>    
+</body>
+
+<script>
+
+var Name = document.getElementById('name')
+var Password = document.getElementById('password')
+var form = document.getElementById('form')
+
+form.addEventListener('submit',(e)=>{
+    if(Name.value ==='' || Name.value == null)
+    {
+        alert("name is reqired");
+    }
+    if(password.value.length<5)
+    {
+        alert("weak password")
+    }
+    if(password.value.length>10)
+    {
+        alert("strong password")
+    }
+    e.preventDefault();
+})
+</script>
+</html>
