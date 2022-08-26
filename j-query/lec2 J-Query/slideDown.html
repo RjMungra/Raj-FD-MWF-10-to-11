@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        p{
+            height: 100px;
+            background-color: red;
+            display: none;
+        }
+    </style>
+    <title>Slide-down</title>
+</head>
+<body>
+    <button>click</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A provident, in modi minima expedita nulla similique totam, commodi asperiores et soluta odit fuga nisi eum numquam delectus architecto! Nulla, ad.</p>
+</body>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").slideDown();
+    });
+});
+</script>
+</html>
