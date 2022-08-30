@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map method</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var ary=[11,4,9,16];
+    var b=ary.map(test);
+
+    document.write(b + "<br>")
+
+    function test(x){
+        return x * 10;
+    }
+
+
+    var aryy=[
+        {fname:"Raj",lname:"Mungara"},
+        {fname:"Tom",lname:"Mungra"},
+        {fname:"Jarry",lname:"Mungra"},
+    ];
+    var c=aryy.map(tast);
+    document.write(c);
+
+    function tast(y){
+        return y.fname;
+    }
+</script>
+</html>

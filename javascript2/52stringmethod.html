@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var str="this is Java script is tutorial"
+    var str1="this is Java script is tutorial"
+
+     var a=str.length;
+     document.write(a);
+
+     var b=str.toLowerCase();
+     document.write(b);
+    
+     var c=str.toUpperCase();
+     document.write(c);
+
+     var d=str.includes("Java");
+     document.write(d);
+
+     var e=str.startsWith("this");
+     document.write(e);
+
+     var f=str.endsWith("tutorial");
+     document.write(f);
+
+     var g=str.search("is");
+     document.write(g+"<br>");
+
+     var h=str.match(/is/g);
+     document.write(h);
+
+     var i=str.indexOf("is")
+     document.write(i);
+
+     var j=str.lastIndexOf("is")
+     document.write(j);
+
+     var k=str.replace("Java","php")
+     document.write(k);
+
+     var l=str.trim()
+     document.write(l);
+
+     var m=str.charAt(5);
+     document.write(m);
+
+     var n=str.charCodeAt(12)
+     document.write(n);
+
+     var o=String.fromCharCode(29);
+     document.write(o);
+
+    var p=str.concat(str1);
+    document.write(p);
+
+    var q=str.split(" ")
+    document.write(q);
+     
+    var r=str.repeat(5);
+    document.write(r);
+
+    var s=str.slice(3,6);
+    document.write(s);
+    
+</script>
+</html>
