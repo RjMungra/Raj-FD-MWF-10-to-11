@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some && Every</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var age=[10,20,22,18,19];
+    document.write(age + "<br>");
+//   some method
+    var b= age.some(check);
+    document.write(b + "<br>");
+// every method
+    var c=age.every(check);
+    document.write(c + "<br>");
+
+    function check(age){
+        return age>=18;
+    }
+</script>
+</html>
